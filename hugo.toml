@@ -1,0 +1,4 @@
+baseURL = 'https://blog.andrewwweddle.com/'
+locale = 'en-au'
+title = 'Andrew Weddle Blog'
+theme = 'ananke'
