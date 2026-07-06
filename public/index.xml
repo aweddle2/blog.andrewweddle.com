@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>First Blog Post on Andrew Weddle Blog</title>
+		<title>Andrew Weddle Blog</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content in First Blog Post on Andrew Weddle Blog</description>
+		<description>Recent content on Andrew Weddle Blog</description>
 		<generator>Hugo</generator>
 		<language>en-au</language>
 		
 		
 		
 		
-			<lastBuildDate></lastBuildDate>
+			<lastBuildDate>Mon, 06 Jul 2026 21:37:16 +1000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Baiting Scammers</title>
+				<link>http://localhost:1313/spamming-the-scammers/</link>
+				<pubDate>Mon, 06 Jul 2026 21:37:16 +1000</pubDate>
+				<guid>http://localhost:1313/spamming-the-scammers/</guid>
+				<description>&lt;p&gt;My current role doesn&amp;rsquo;t see me writing much code.  Lots of configuring services, diagnosing errors, but nothing that looks like an IDE.  It&amp;rsquo;s been nearly 18 months since I wrote any production code, and what an 18 months to miss.&lt;/p&gt;&#xA;&lt;p&gt;Vibe coding, Claude, Chat GPT, Copilot, Cursor, all just names on Social Media posts, Meetup session events and obviously many an article on LinkedIn.&lt;/p&gt;&#xA;&lt;p&gt;All that changes very soon.  I&amp;rsquo;m launching into a fairly sizeable project in the coming weeks, one I would have deemed impossible for one person 10 years ago.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>
