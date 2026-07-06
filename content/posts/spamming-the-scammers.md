@@ -20,4 +20,8 @@ I'll write about the first 2 in a future blog, for now I am just excited to show
 
 I'm a member of quite a few meetups, a few of them about tech, .Net in particular, [Melb.NET Meetup](https://www.meetup.com/melb-net-meetup/). [Melbourne .NET User Group](https://www.meetup.com/melbourne-net-user-group/) and [DDD Melbourne By Night](https://www.meetup.com/ddd-melbourne-by-night/) to name a few. 
 
-They are all plagued by the same problem.  Scammers posting fake job adverts with links to an online form to scrape data.
+They are all plagued by the same problem.  Scammers posting fake job adverts with links to an online form to scrape data.  The admins of these groups are excellent at deleting the posts, but not before the notification email has gone out to every member in the group.  They are persistent.  At least 1 or 2 a week.
+
+I wanted to see what I could do to help discourage the scammers from posting.  I also miss working with Selenium and the madness that is a modern html document.
+
+So Claude and I made the [Scam Baiting Form Completer](https://github.com/aweddle2/scam-baiting-form-completer).  Still in it's infancy and now working on reliability and maintainability issues. PR's, Forks and issues welcome!
