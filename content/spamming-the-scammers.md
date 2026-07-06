@@ -1,6 +1,5 @@
 +++
 date = '2026-07-06T21:37:16+10:00'
-draft = false
 title = 'Baiting Scammers'
 +++
 
