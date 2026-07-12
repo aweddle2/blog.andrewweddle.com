@@ -1,6 +1,5 @@
 +++
 date = '2026-07-12T21:36:16+10:00'
-draft = true
 title = 'Updating my Password Manager'
 +++
 
