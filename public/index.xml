@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 12 Jul 2026 21:36:16 +1000</lastBuildDate>
+			<lastBuildDate>Sun, 12 Jul 2026 21:56:11 +1000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>This Blog</title>
+				<link>http://localhost:1313/this-blog/</link>
+				<pubDate>Sun, 12 Jul 2026 21:56:11 +1000</pubDate>
+				<guid>http://localhost:1313/this-blog/</guid>
+				<description>&lt;p&gt;Resurrecting this blog after&amp;hellip;. well a while.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/WordPress-logotype-wmark.png#floatleft&#34; alt=&#34;wordpress logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A wordpress blog on this domain started back in October 2007 for very different reasons.  It was trawled by &lt;a href=&#34;https://web.archive.org/web/20111102120111/http://blog.andrewweddle.com/&#34;&gt;The Wayback Machine&lt;/a&gt; showing the first post in December 2007.&lt;/p&gt;&#xA;&lt;p&gt;I might add those articles back in here later, but for now I wanted to talk tech.&lt;/p&gt;&#xA;&lt;p&gt;I loved that Wordpress Blog.  Even back then Wordpress was seriously impressive.  I used it to build several websites for clients and most of them were blown away by the fact that they could modify the content themselves and didnt need to constantly come back to me for changes.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Updating my Password Manager</title>
 				<link>http://localhost:1313/updating-my-password-manager/</link>
