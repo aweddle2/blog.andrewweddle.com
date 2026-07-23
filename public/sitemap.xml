@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/an-unplanned-side-quest/</loc>
+    <lastmod>2026-07-22T23:05:57+10:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-12T21:36:16+10:00</lastmod>
+    <lastmod>2026-07-22T23:05:57+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/updating-my-password-manager/</loc>
     <lastmod>2026-07-12T21:36:16+10:00</lastmod>

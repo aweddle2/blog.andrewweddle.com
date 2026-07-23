@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 12 Jul 2026 21:36:16 +1000</lastBuildDate>
+			<lastBuildDate>Wed, 22 Jul 2026 23:05:57 +1000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>An unplanned Side Quest into multipart/form-data</title>
+				<link>http://localhost:1313/an-unplanned-side-quest/</link>
+				<pubDate>Wed, 22 Jul 2026 23:05:57 +1000</pubDate>
+				<guid>http://localhost:1313/an-unplanned-side-quest/</guid>
+				<description>&lt;h2 id=&#34;the-task&#34;&gt;The Task&lt;/h2&gt;&#xA;&lt;p&gt;Recently I was asked to update an integration with &lt;a href=&#34;https://facilio.com/&#34;&gt;Facilio&lt;/a&gt;.  The integration sends maintenance requests from one system to Facilio Work Orders.  The task was to add attachments into the integration.  Facilio have an endpoint in their &lt;a href=&#34;https://facilio.com/developers/docs/api-reference/&#34;&gt;REST API&lt;/a&gt; for uploading attachments, but rather unusually it accepts multipart/form-data body rather than json or xml.&lt;/p&gt;&#xA;&lt;p&gt;This integration is built with Power Automate and mostly with the HTTP Action.  A fact that will become very important later.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Updating my Password Manager</title>
 				<link>http://localhost:1313/updating-my-password-manager/</link>
