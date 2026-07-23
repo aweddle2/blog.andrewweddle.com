@@ -1,6 +1,5 @@
 +++
-date = '2026-07-20T23:05:57+10:00'
-draft = true
+date = '2026-07-23T23:05:57+10:00'
 title = 'An unplanned Side Quest into multipart/form-data'
 +++
 
