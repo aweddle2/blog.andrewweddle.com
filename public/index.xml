@@ -34,5 +34,12 @@
 				<guid>http://localhost:1313/spamming-the-scammers/</guid>
 				<description>&lt;p&gt;My current role doesn&amp;rsquo;t see me writing much code.  Lots of configuring services, diagnosing errors, but nothing that looks like an IDE.  It&amp;rsquo;s been nearly 18 months since I wrote any production code, and what an 18 months to miss.&lt;/p&gt;&#xA;&lt;p&gt;Vibe coding, Claude, Chat GPT, Copilot, Cursor, all just names on Social Media posts, Meetup session events and obviously many an article on LinkedIn.&lt;/p&gt;&#xA;&lt;p&gt;All that changes very soon.  I&amp;rsquo;m launching into a fairly sizeable project in the coming weeks, one I would have deemed impossible for one person 10 years ago.&lt;/p&gt;</description>
 			</item>
+			<item>
+				<title>This Blog</title>
+				<link>http://localhost:1313/this-blog/</link>
+				<pubDate>Fri, 03 Jul 2026 21:56:11 +1000</pubDate>
+				<guid>http://localhost:1313/this-blog/</guid>
+				<description>&lt;p&gt;Resurrecting this blog after&amp;hellip; well, a while.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/WordPress-logotype-wmark.png#floatleft&#34; alt=&#34;WordPress logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-quick-history-lesson&#34;&gt;A quick history lesson&lt;/h2&gt;&#xA;&lt;p&gt;A WordPress blog on this sub-domain started back in October 2007 for very different reasons. It was trawled by &lt;a href=&#34;https://web.archive.org/web/20111102120111/http://blog.andrewweddle.com/&#34;&gt;The Wayback Machine&lt;/a&gt; showing the first post in December 2007.&lt;/p&gt;&#xA;&lt;p&gt;I might add those articles back in later, but for now I wanted to talk tech.&lt;/p&gt;&#xA;&lt;p&gt;I loved that WordPress blog. Even back then, WordPress was seriously impressive. I used it to build several websites for clients. Most of them were blown away by the fact that they could modify the content themselves. Remember: this was 2006–2008, and a customer managing their own content was very new.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

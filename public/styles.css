@@ -1,0 +1,9 @@
+img[src$='#floatleft'] {
+    float: left;
+    width: 25%;
+}
+
+img[src$='#floatright'] {
+    float: right;
+    width: 25%;
+}
