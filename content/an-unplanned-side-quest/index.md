@@ -17,7 +17,7 @@ I got this working pretty quickly POSTing to a [webhook.site](https://webhook.si
 
 ## Understanding some of the Power Automate Magic
 
-After a lot of testing and getting nowhere, checking different payloads and header values, Claude worked out that Power Automate was messing around with the Content-Type Header.
+After a lot of testing different payloads and header values, Claude worked out that Power Automate was messing around with the Content-Type Header.
 
 ```
 {
@@ -49,7 +49,7 @@ The only way forward seemed to be to abandon the "undocumented" feature and manu
 
 To try and speed up that process I jumped to Postman to get the syntax correct.
 
-![postman sample using a 'form-data' bosy](images/postman-form-data.png)
+![postman sample using a 'form-data' body](images/postman-form-data.png)
 
 Getting the request working was trivial, just set form-data in the body, add a name and choose a file, Postman does it's thing and success, a 200 response.
 

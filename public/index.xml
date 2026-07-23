@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Andrew Weddle Blog</title>
-		<link>http://localhost:1313/</link>
+		<link>https://blog.andrewwweddle.com/</link>
 		<description>Recent content on Andrew Weddle Blog</description>
 		<generator>Hugo</generator>
 		<language>en-au</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Sun, 12 Jul 2026 21:36:16 +1000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://blog.andrewwweddle.com/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Updating my Password Manager</title>
-				<link>http://localhost:1313/updating-my-password-manager/</link>
+				<link>https://blog.andrewwweddle.com/updating-my-password-manager/</link>
 				<pubDate>Sun, 12 Jul 2026 21:36:16 +1000</pubDate>
-				<guid>http://localhost:1313/updating-my-password-manager/</guid>
+				<guid>https://blog.andrewwweddle.com/updating-my-password-manager/</guid>
 				<description>&lt;p&gt;Well it finally happened. I was pretty sure it was going to, I just didn&amp;rsquo;t know when.&lt;/p&gt;&#xA;&lt;p&gt;My trusty &lt;a href=&#34;https://www.keepassx.org/&#34;&gt;KeePassX&lt;/a&gt; solution was EOL.  Apple announcing the retirement of Rosetta meant KeepPassX was going to stop working.  I didnt actually realise KeePassX had no longer been in active development since 2021 so it was definetly time for a change.&lt;/p&gt;&#xA;&lt;p&gt;I been keeping my passwords in a KeePass 1 database file stored in my google drive since 2014. I use KeePassDroid on my phone and KeePassX on my MacBooks.  It worked for me really well and I felt happy I wasnt subject of any of the cloud data breaches that were happening at the time and since.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Baiting Scammers</title>
-				<link>http://localhost:1313/spamming-the-scammers/</link>
+				<link>https://blog.andrewwweddle.com/spamming-the-scammers/</link>
 				<pubDate>Mon, 06 Jul 2026 21:37:16 +1000</pubDate>
-				<guid>http://localhost:1313/spamming-the-scammers/</guid>
+				<guid>https://blog.andrewwweddle.com/spamming-the-scammers/</guid>
 				<description>&lt;p&gt;My current role doesn&amp;rsquo;t see me writing much code.  Lots of configuring services, diagnosing errors, but nothing that looks like an IDE.  It&amp;rsquo;s been nearly 18 months since I wrote any production code, and what an 18 months to miss.&lt;/p&gt;&#xA;&lt;p&gt;Vibe coding, Claude, Chat GPT, Copilot, Cursor, all just names on Social Media posts, Meetup session events and obviously many an article on LinkedIn.&lt;/p&gt;&#xA;&lt;p&gt;All that changes very soon.  I&amp;rsquo;m launching into a fairly sizeable project in the coming weeks, one I would have deemed impossible for one person 10 years ago.&lt;/p&gt;</description>
 			</item>
 	</channel>
