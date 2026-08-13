@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Can you write code on a plane? | Andrew Weddle Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="
+I&rsquo;ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.
+So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?
+What&rsquo;s the bare minimum?
+It&rsquo;s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.">
+    <meta name="generator" content="Hugo 0.163.3">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/">
+    
+
+    
+    
+    <meta property="og:url" content="https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/">
+	<meta property="og:site_name" content="Andrew Weddle Blog">
+	<meta property="og:title" content="Can you write code on a plane?">
+	<meta property="og:description" content="I’ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.
+So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?
+What’s the bare minimum? It’s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.">
+	<meta property="og:locale" content="en_au">
+	<meta property="og:type" content="article">
+		<meta property="article:published_time" content="2026-08-13T21:56:11+10:00">
+		<meta property="article:modified_time" content="2026-08-13T21:56:11+10:00">
+
+	<meta itemprop="name" content="Can you write code on a plane?">
+	<meta itemprop="description" content="I’ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.
+So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?
+What’s the bare minimum? It’s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.">
+	<meta itemprop="datePublished" content="2026-08-13T21:56:11+10:00">
+	<meta itemprop="dateModified" content="2026-08-13T21:56:11+10:00">
+	<meta itemprop="wordCount" content="222">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Can you write code on a plane?">
+	<meta name="twitter:description" content="I’ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.
+So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?
+What’s the bare minimum? It’s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-page is-page page-can-you-write-code-on-a-plane">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Andrew Weddle Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-can-you-write-code-on-a-plane flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="https://blog.andrewwweddle.com/">Andrew Weddle Blog</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Can you write code on a plane?</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-08-13T21:56:11+10:00">August 13, 2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p><img src="/can-you-write-code-on-a-plane/images/20260723_135402.jpg" alt="Singapore Airlines A380"></p>
+<p>I&rsquo;ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.</p>
+<p>So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?</p>
+<h2 id="whats-the-bare-minimum">What&rsquo;s the bare minimum?</h2>
+<p>It&rsquo;s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.</p>
+<p>Then I remembered I need to:</p>
+<ul>
+<li>Download packages with <code>npm</code> and NuGet</li>
+<li>Commit (well, technically push) to Git</li>
+<li>Chat with Claude</li>
+<li>Make API calls</li>
+</ul>
+<h2 id="what-i-managed">What I managed</h2>
+<p>My <code>package.json</code> and <code>package-lock.json</code> got out of sync, so I needed to do a full <code>npm install</code>.</p>
+<p><img src="/can-you-write-code-on-a-plane/images/npm-install-fail.png" alt="a failed npm install"></p>
+<p>So that was the end of that project until I could get packages.</p>
+<p>I switched to this project, which has no packages to manage. I wrote an article and tried a <code>git push</code>. That didn&rsquo;t work either.</p>
+<p><img src="/can-you-write-code-on-a-plane/images/failed-github-pushes.png" alt="a failed git push"></p>
+<p>I also spent plenty of time on Chrome Dino and general web browsing.</p>
+<p><img src="/can-you-write-code-on-a-plane/images/dinorun.png" alt="Chrome Dino"></p>
+<p>All in all, I think it&rsquo;s very close to being possible and, for me at least, a great way to pass the time. I&rsquo;ll definitely try it again next time I fly.</p>
+<ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://blog.andrewwweddle.com/" >
+    &copy;  Andrew Weddle Blog 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

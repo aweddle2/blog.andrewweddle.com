@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 11 Aug 2026 22:21:16 +0100</lastBuildDate>
+			<lastBuildDate>Thu, 13 Aug 2026 21:56:11 +1000</lastBuildDate>
 		
 			<atom:link href="https://blog.andrewwweddle.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Can you write code on a plane?</title>
+				<link>https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/</link>
+				<pubDate>Thu, 13 Aug 2026 21:56:11 +1000</pubDate>
+				<guid>https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/images/20260723_135402.jpg&#34; alt=&#34;Singapore Airlines A380&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.&lt;/p&gt;&#xA;&lt;p&gt;So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-the-bare-minimum&#34;&gt;What&amp;rsquo;s the bare minimum?&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Is Nomadic Work Actually Possible</title>
 				<link>https://blog.andrewwweddle.com/is-nomadic-work-actually-possible/</link>
