@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Andrew Weddle Blog</title>
-		<link>http://localhost:1313/</link>
+		<link>https://blog.andrewwweddle.com/</link>
 		<description>Recent content on Andrew Weddle Blog</description>
 		<generator>Hugo</generator>
 		<language>en-au</language>
@@ -10,29 +10,36 @@
 		
 		
 		
-			<lastBuildDate>Sun, 12 Jul 2026 21:36:16 +1000</lastBuildDate>
+			<lastBuildDate>Thu, 13 Aug 2026 21:56:11 +1000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://blog.andrewwweddle.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Can you write code on a plane?</title>
+				<link>https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/</link>
+				<pubDate>Thu, 13 Aug 2026 21:56:11 +1000</pubDate>
+				<guid>https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://blog.andrewwweddle.com/can-you-write-code-on-a-plane/images/20260723_135402.jpg&#34; alt=&#34;Singapore Airlines A380&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always had mixed feelings about long-haul flights. On the one hand they usually mean travel and adventure; on the other, long hours sitting in a tin can are never fun.&lt;/p&gt;&#xA;&lt;p&gt;So I was pleasantly surprised to find that both my recent flights with Singapore Airlines had Wi‑Fi! Streaming video was off the cards, but could you write code?&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-the-bare-minimum&#34;&gt;What&amp;rsquo;s the bare minimum?&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s amazing what you take for granted. When I first asked myself this question, I thought all I needed was enough internet to Google the odd problem and read some Stack Overflow answers.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>This Blog</title>
+				<link>https://blog.andrewwweddle.com/this-blog/</link>
+				<pubDate>Thu, 30 Jul 2026 21:56:11 +1000</pubDate>
+				<guid>https://blog.andrewwweddle.com/this-blog/</guid>
+				<description>&lt;p&gt;Resurrecting this blog after&amp;hellip; well, a while.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/WordPress-logotype-wmark.png#floatleft&#34; alt=&#34;WordPress logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-quick-history-lesson&#34;&gt;A quick history lesson&lt;/h2&gt;&#xA;&lt;p&gt;A WordPress blog on this sub-domain started back in October 2007 for very different reasons. It was trawled by &lt;a href=&#34;https://web.archive.org/web/20111102120111/http://blog.andrewweddle.com/&#34;&gt;The Wayback Machine&lt;/a&gt; showing the first post in December 2007.&lt;/p&gt;&#xA;&lt;p&gt;I might add those articles back in later, but for now I wanted to talk tech.&lt;/p&gt;&#xA;&lt;p&gt;I loved that WordPress blog. Even back then, WordPress was seriously impressive. I used it to build several websites for clients. Most of them were blown away by the fact that they could modify the content themselves. Remember: this was 2006–2008, and a customer managing their own content was very new.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Updating my Password Manager</title>
-				<link>http://localhost:1313/updating-my-password-manager/</link>
+				<link>https://blog.andrewwweddle.com/updating-my-password-manager/</link>
 				<pubDate>Sun, 12 Jul 2026 21:36:16 +1000</pubDate>
-				<guid>http://localhost:1313/updating-my-password-manager/</guid>
+				<guid>https://blog.andrewwweddle.com/updating-my-password-manager/</guid>
 				<description>&lt;p&gt;Well it finally happened. I was pretty sure it was going to, I just didn&amp;rsquo;t know when.&lt;/p&gt;&#xA;&lt;p&gt;My trusty &lt;a href=&#34;https://www.keepassx.org/&#34;&gt;KeePassX&lt;/a&gt; solution was EOL.  Apple announcing the retirement of Rosetta meant KeepPassX was going to stop working.  I didnt actually realise KeePassX had no longer been in active development since 2021 so it was definetly time for a change.&lt;/p&gt;&#xA;&lt;p&gt;I been keeping my passwords in a KeePass 1 database file stored in my google drive since 2014. I use KeePassDroid on my phone and KeePassX on my MacBooks.  It worked for me really well and I felt happy I wasnt subject of any of the cloud data breaches that were happening at the time and since.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Baiting Scammers</title>
-				<link>http://localhost:1313/spamming-the-scammers/</link>
+				<link>https://blog.andrewwweddle.com/spamming-the-scammers/</link>
 				<pubDate>Mon, 06 Jul 2026 21:37:16 +1000</pubDate>
-				<guid>http://localhost:1313/spamming-the-scammers/</guid>
+				<guid>https://blog.andrewwweddle.com/spamming-the-scammers/</guid>
 				<description>&lt;p&gt;My current role doesn&amp;rsquo;t see me writing much code.  Lots of configuring services, diagnosing errors, but nothing that looks like an IDE.  It&amp;rsquo;s been nearly 18 months since I wrote any production code, and what an 18 months to miss.&lt;/p&gt;&#xA;&lt;p&gt;Vibe coding, Claude, Chat GPT, Copilot, Cursor, all just names on Social Media posts, Meetup session events and obviously many an article on LinkedIn.&lt;/p&gt;&#xA;&lt;p&gt;All that changes very soon.  I&amp;rsquo;m launching into a fairly sizeable project in the coming weeks, one I would have deemed impossible for one person 10 years ago.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>This Blog</title>
-				<link>http://localhost:1313/this-blog/</link>
-				<pubDate>Fri, 03 Jul 2026 21:56:11 +1000</pubDate>
-				<guid>http://localhost:1313/this-blog/</guid>
-				<description>&lt;p&gt;Resurrecting this blog after&amp;hellip; well, a while.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/WordPress-logotype-wmark.png#floatleft&#34; alt=&#34;WordPress logo&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-quick-history-lesson&#34;&gt;A quick history lesson&lt;/h2&gt;&#xA;&lt;p&gt;A WordPress blog on this sub-domain started back in October 2007 for very different reasons. It was trawled by &lt;a href=&#34;https://web.archive.org/web/20111102120111/http://blog.andrewweddle.com/&#34;&gt;The Wayback Machine&lt;/a&gt; showing the first post in December 2007.&lt;/p&gt;&#xA;&lt;p&gt;I might add those articles back in later, but for now I wanted to talk tech.&lt;/p&gt;&#xA;&lt;p&gt;I loved that WordPress blog. Even back then, WordPress was seriously impressive. I used it to build several websites for clients. Most of them were blown away by the fact that they could modify the content themselves. Remember: this was 2006–2008, and a customer managing their own content was very new.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
