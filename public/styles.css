@@ -7,3 +7,30 @@ img[src$='#floatright'] {
     float: right;
     width: 25%;
 }
+
+/* Icons on header nav menu entries (see layouts/_partials/site-navigation.html). */
+.ananke-nav-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    margin-right: 0.35em;
+}
+
+.ananke-nav-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS beats SVG presentation attributes, so only tint icons that don't paint
+   themselves. Stroke-based icons declare fill="none" and must keep it. */
+.ananke-nav-icon svg:not([fill]) {
+    fill: currentColor;
+}
+
+/* Social follow icons sit in the same nav row; 32px is too big beside nav text. */
+.ananke-socials a .icon svg {
+    width: 20px;
+    height: 20px;
+}
