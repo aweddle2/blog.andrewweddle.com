@@ -2,3 +2,7 @@ baseURL = 'https://blog.andrewwweddle.com/'
 locale = 'en-au'
 title = 'Andrew Weddle Blog'
 theme = 'ananke'
+
+[services]
+  [services.disqus]
+    shortname = 'andrew-weddle-blog'
