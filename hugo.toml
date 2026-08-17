@@ -1,4 +1,40 @@
-baseURL = 'https://blog.andrewwweddle.com/'
+baseURL = 'https://blog.andrewweddle.com/'
 locale = 'en-au'
 title = 'Andrew Weddle Blog'
 theme = 'ananke'
+
+[services]
+  [services.disqus]
+    shortname = 'andrew-weddle-blog'
+
+[params]
+  featured_image_class = "cover bg-center"   # site-header default is bg-top
+  cover_dimming_class = "bg-black-60"        # dark overlay so white text stays readable
+
+  [params.ananke]
+    custom_css = ["styles.css"]              # loads static/styles.css (nav icons, image floats)
+
+  # Renders Facebook / Instagram / LinkedIn icons in the header nav.
+  [params.ananke.social.follow]
+    networks = ['facebook', 'instagram', 'linkedin']
+
+  # The theme ships an http:// LinkedIn profile URL; force https.
+  [params.ananke.social.networks.linkedin]
+    profile = 'https://www.linkedin.com/in/%s'
+
+  [params.ananke.social.facebook]
+    username = 'toadfish'
+  [params.ananke.social.instagram]
+    username = 'toadfish2'
+  [params.ananke.social.linkedin]
+    username = 'andrew-weddle-81957822'
+
+[[cascade]]
+  [cascade.params]
+    featured_image = 'images/header.jpg'
+
+[[menu.main]]
+  name = 'My Website'
+  url = 'https://www.andrewweddle.com'
+  [menu.main.params]
+    icon = 'globe'

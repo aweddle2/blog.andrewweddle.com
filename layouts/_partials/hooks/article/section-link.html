@@ -1,0 +1,11 @@
+{{/*
+  Overrides themes/ananke/layouts/_partials/hooks/article/section-link.html.
+
+  The stock hook renders an <aside> above the article title showing the section
+  title, linked to the section index. Posts here live at content/ root, so
+  .CurrentSection resolves to the home page and the aside just repeats the site
+  title linking to "/" — redundant next to the header.
+
+  filter.html resolves hooks via templates.Exists, so shadowing the partial with
+  a template that outputs nothing removes the aside. Intentionally empty.
+*/}}
