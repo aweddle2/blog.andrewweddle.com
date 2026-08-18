@@ -1,0 +1,111 @@
+{{- /*
+  Image render hook: serves responsive, resized variants instead of full-size
+  originals.
+
+  Handles every path shape used in this site's content:
+
+    1. images/foo.jpg                      page bundle resource
+    2. images/foo.png#floatleft            bundle resource + fragment
+    3. /some-post/images/foo.jpg           site-rooted path into a bundle
+    4. ../other-post/images/foo.jpg        relative path into a sibling bundle
+
+  Shapes 3 and 4 are resolved by walking the path, treating each ancestor
+  directory as a candidate page and the remainder as that page's resource name.
+
+  The #fragment is stripped before resolving, then re-appended to src, because
+  static/styles.css floats images via img[src$='#floatleft'] / '#floatright'.
+  Dropping it would silently break those floats.
+
+  Anything that cannot be resolved, or cannot be processed (SVG, GIF), is
+  emitted unchanged rather than failing the build.
+*/ -}}
+
+{{- $widths := site.Params.ananke.responsive_image_widths | default (slice 480 960 1440 1920) -}}
+{{- $sizes := "(min-width: 48rem) 48rem, 100vw" -}}
+{{- $quality := "q82" -}}
+
+{{- /* Split the destination into path, query and fragment. */ -}}
+{{- $dest := .Destination -}}
+{{- $suffix := "" -}}
+{{- $path := $dest -}}
+{{- if strings.Contains $path "#" -}}
+  {{- $bits := split $path "#" -}}
+  {{- $path = index $bits 0 -}}
+  {{- $suffix = printf "#%s" (index $bits 1) -}}
+{{- end -}}
+
+{{- /* 1 & 2: a resource on the current page's bundle. */ -}}
+{{- $r := "" -}}
+{{- with .Page.Resources.GetMatch $path -}}
+  {{- $r = . -}}
+{{- end -}}
+
+{{- /* 3 & 4: resolve against another page's bundle. */ -}}
+{{- if not $r -}}
+  {{- $abs := $path -}}
+  {{- if not (hasPrefix $path "/") -}}
+    {{- $abs = path.Join .Page.RelPermalink $path -}}
+  {{- end -}}
+  {{- $segs := split (strings.TrimPrefix "/" $abs) "/" -}}
+  {{- $n := len $segs -}}
+  {{- if ge $n 2 -}}
+    {{- range $i := seq (sub $n 1) 1 -}}
+      {{- if not $r -}}
+        {{- $pagePath := printf "/%s" (delimit (first $i $segs) "/") -}}
+        {{- $resName := delimit (after $i $segs) "/" -}}
+        {{- with site.GetPage $pagePath -}}
+          {{- with .Resources.GetMatch $resName -}}
+            {{- $r = . -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Fall back to assets/, then give up and pass the original through. */ -}}
+{{- if not $r -}}
+  {{- with resources.Get $path -}}
+    {{- $r = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+
+{{- if not $r -}}
+  {{- warnf "[render-image] could not resolve %q on %s - emitted unchanged" $dest .Page.Path -}}
+  <img src="{{ $dest }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- else if in (slice "svg" "gif") $r.MediaType.SubType -}}
+  {{- /* Vector and animated formats: link the original, no processing. */ -}}
+  <img src="{{ $r.RelPermalink }}{{ $suffix }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- else -}}
+  {{- /* Cap the displayed image, and only offer widths the original can fill. */ -}}
+  {{- $usable := slice -}}
+  {{- range $widths -}}
+    {{- if le . $r.Width -}}
+      {{- $usable = $usable | append . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $main := $r -}}
+  {{- $srcset := slice -}}
+  {{- if $usable -}}
+    {{- range $usable -}}
+      {{- $v := $r.Resize (printf "%dx %s" . $quality) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $v.RelPermalink $v.Width) -}}
+    {{- end -}}
+    {{- $main = $r.Resize (printf "%dx %s" (index (last 1 $usable) 0) $quality) -}}
+  {{- end -}}
+
+  <img
+    src="{{ $main.RelPermalink }}{{ $suffix }}"
+    {{ with $srcset }}srcset="{{ delimit . ", " }}"
+    sizes="{{ $sizes }}"{{ end }}
+    width="{{ $main.Width }}"
+    height="{{ $main.Height }}"
+    alt="{{ $alt }}"{{ with $title }}
+    title="{{ . }}"{{ end }}
+    loading="lazy"
+    decoding="async">
+{{- end -}}
